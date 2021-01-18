@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'BebasKai';
+    src: url('./Fonts/BebasKai.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BigNoodleTitle';
+    src: url('./Fonts/big_noodle_titling.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MadeTommy';
+    src: url('./Fonts/MADE TOMMY Regular_PERSONAL USE.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url('./Fonts/Gobold Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.site-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 10%;
+    opacity: 90%;
+    position: fixed;
+    z-index: 99;
+    align-items: center;
+}
+
+.nav-bar a {
+    margin: auto 20px auto 20px;
+    text-decoration: none;
+}
+
+.nav-bar ul li {
+    float: left;
+    list-style: none;
+    margin-left: 5px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: BigNoodleTitle, sans-serif;
+}
+
+/*---------------------HOME---------------------*/
+
+#home-group {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    color: #ffffff;
+    font-family: Gobold;
+}
+
+.home img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.home h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*---------------------GROUP CONFIG E HREF---------------------*/
+
+.group {
+    width: 100%;
+    height: 100vh;
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.group h1 {
+    color: #ffffff;
+    font-family: BebasKai, sans-serif;
+    margin-bottom: 40px;
+    font-size: 55px;
+}
+
+#about, #skills, #services, #arts, #contact  {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -100vh; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    background-color: transparent;
+    z-index: -1;
+}
+
+/*---------------------SOBRE---------------------*/
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about img {
+    width: 250px;
+    height: 250px;
+    margin-right: 40px;
+}
+
+.about h2{
+    color: #ffffff;
+    font-family: Gobold, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #ababab;
+    font-family: MadeTommy, sans-serif;
+    margin-bottom: 20px;
+}
+
+/*---------------------HABILIDADES---------------------*/
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skils-continue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.skills-content {
+    color: #ffffff;
+    font-family: BigNoodleTitle, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.skills-content img {
+    width: 200px;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+/*---------------------SERVIÇOS---------------------*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.services img {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+}
+
+.services p {
+    color: #ababab;
+    font-family: MadeTommy, sans-serif;
+}
+
+.services h2{
+    font-family: BebasKai, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.services-content-continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*---------------------CONTATO---------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: BigNoodleTitle, sans-serif;
+    font-size: 20px;
+}
+
+.contact-content p {
+    margin-bottom: 10px;
+}
+
+.title-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.title-holder h2 {
+    font-family: BebasKai, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.title-holder h3 {
+    font-family: MadeTommy, sans-serif;
+    color: #ababab;
+    font-size: 20px;
+}
+
+.button-holder {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+}
+
+
+.button {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(161, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 6px 4px rgba(20, 20, 20, 0.77);
+	-moz-box-shadow: 8px 6px 4px rgba(20, 20, 20, 0.77);
+	box-shadow: 8px 6px 4px rgba(20, 20, 20, 0.77);
+    color: #ffffff;
+    font-family: BigNoodleTitle, sans-serif;
+    font-size: 20px;
+    border-style: none;
+}
+
+.button:hover {
+    width: 79px;
+    height: 39px;
+    cursor: pointer;
+    opacity: 75%;
+    margin-top: 1px;
+}
+
+.phone-mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.phone-mail-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: BigNoodleTitle, sans-serif;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.phone-mail-content img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.phone-mail-content p {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/*---------------------Rodapé---------------------*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: #141414;
+    color: #aaaaaa;
+}
+
+footer p {
+    margin-right: 550px;
+}
+
+.social-midia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.social-midia-button {
+    background-color:  #242424;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    opacity: 65%;
+}
+
+.social-midia-button img {
+    width: 20px;
+}
+
+.social-midia-button:hover {
+    opacity: 100%;
+    background-color:  #2e2e2e;
+}
+
+
+/*---------------------Mensagem---------------------*/
+
+.msg-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    width: 100%;
+    height: 100vh;
+    color: #008f07;
+    font-family: BebasKai, sans-serif;
+}
+
+.msg-button{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(161, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 6px 4px rgba(20, 20, 20, 0.77);
+	-moz-box-shadow: 8px 6px 4px rgba(20, 20, 20, 0.77);
+	box-shadow: 8px 6px 4px rgba(20, 20, 20, 0.77);
+    color: #ffffff;
+    font-family: BigNoodleTitle, sans-serif;
+    font-size: 20px;
+    border-style: none;
+    margin-top: 50px;
+}
