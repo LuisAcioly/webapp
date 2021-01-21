@@ -421,86 +421,39 @@ footer p {
 
 
 @media only screen and (max-width: 650px){
-    
+
     /*---------------------Sobre---------------------*/
 
     .about {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .about img {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 40px;
-    }
-    
-    .about h2{
-        color: #ffffff;
-        font-family: Gobold, sans-serif;
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    
-    .about p {
-        color: #ababab;
-        font-family: MadeTommy, sans-serif;
-        margin-bottom: 20px;
-        font-size: 15px;
     }
 
     /*---------------------Habilidades---------------------*/
 
     .skills {
-        display: flex;
         flex-direction: row;
     }
     
     .skils-continue {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-        margin-left: 10px;
     }
 
-    .skills-content img {
-        width: 200px;
-        height: auto;
-        margin-top: 30px;
-        margin-left: 20px;
-    }
 
     /*---------------------SERVIÇOS---------------------*/
 
     .services {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .services-content {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
     }
 
-    .services-content img {
-        margin-top: 50px;
-    }
 
     /*---------------------CONTATO---------------------*/
 
     .contact {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .contact-content {
